@@ -18,7 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${frl.className} flex min-h-screen flex-col`}>
+      <body
+        className={`${frl.className} flex min-h-screen flex-col overflow-x-hidden`}
+      >
         <InfoBar />
         <Navbar />
         <div>{children}</div>

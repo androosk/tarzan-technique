@@ -18,7 +18,7 @@ const Navbar = () => {
         >
           <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
             <Link href="/" className="-m-1.5 p-1.5">
-              <h1 className="text-2xl tracking-wide">
+              <h1 className="text-xl sm:text-2xl tracking-wide">
                 Men&apos;s and Couples Coaching
               </h1>
             </Link>
