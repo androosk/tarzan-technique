@@ -27,7 +27,8 @@ export default function AboutMe() {
         <div className="mt-5 sm:flex sm:justify-center md:mt-8">
           <div className="rounded-md shadow">
             <Link
-              href="#"
+              href="https://calendly.com/tarzantechnique/new-client-intake-5-dollars-60-mins-brt-goals"
+              target="_blank"
               className="border-4 rounded-xl shadow w-full flex items-center justify-center px-8 py-3 border-red-900 text-base text-white bg-black font-sans hover:bg-red-700 md:py-3 md:text-lg md:px-8 font-light tracking-wider"
             >
               Find out More
