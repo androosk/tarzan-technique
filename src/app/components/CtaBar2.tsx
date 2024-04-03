@@ -2,7 +2,10 @@ import Link from "next/link";
 
 export default function CtaBar() {
   return (
-    <Link href="https://calendly.com/tarzantechnique/new-client-intake-5-dollars-60-mins-brt-goals">
+    <Link
+      href="https://calendly.com/tarzantechnique/new-client-intake-5-dollars-60-mins-brt-goals"
+      target="_blank"
+    >
       <div className="bg-red-900 h-content py-4 flex flex-col justify-center items-center text-white font-sans font-extralight tracking-wide text-3xl">
         <p>
           Learn to live in abundance with the proven &quot;Tarzan

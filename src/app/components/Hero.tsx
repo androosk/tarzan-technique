@@ -17,6 +17,7 @@ export default function Hero() {
           <div className="rounded-md shadow w-40 sm:w-max">
             <Link
               href="https://calendly.com/tarzantechnique/new-client-intake-5-dollars-60-mins-brt-goals"
+              target="_blank"
               className="border-4 rounded-xl shadow w-full flex items-center justify-between py-3 border-red-900 text-base text-white bg-black font-sans hover:bg-red-700 md:py-3 md:text-lg md:px-8 font-light tracking-wider "
             >
               <span>
