@@ -8,7 +8,7 @@ export default function Hero() {
       <div className=" w-screen px-10 items-center">
         <div className="md:text-4xl text-red-900 sm:text-3xl text-xl uppercase leading-8">
           <h2 className="leading-relaxed">Change your patterns</h2>
-          <p>Redifine your relationships</p>
+          <p>Redefine your relationships</p>
           <p className="mt-3 max-w-xl text-xl text-black font-sans font-extralight tracking-wide normal-case">
             Empowering men to create a life of abundance and stronger families{" "}
           </p>

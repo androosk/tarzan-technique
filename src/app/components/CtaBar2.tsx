@@ -8,7 +8,7 @@ export default function CtaBar() {
     >
       <div className="bg-red-900 h-content py-4 flex flex-col justify-center items-center text-white font-sans font-extralight tracking-wide text-3xl">
         <p>
-          Learn to live in abundance with the proven &quot;Tarzan
+          Unleash fun, freedom and find fulfillment with the proven &quot;Tarzan
           Technique&quot;
         </p>
         <p>
