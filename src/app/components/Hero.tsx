@@ -1,13 +1,20 @@
 import Link from "next/link";
 import Image from "next/image";
+import { Fira_Sans } from "next/font/google";
 import { FaGlasses } from "react-icons/fa";
+
+const frs = Fira_Sans({
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+});
 
 export default function Hero() {
   return (
-    <div className="flex relative items-center h-content bg-[#CCB9B9] py-6 sm:py-0">
-      <div className=" w-screen px-10 items-center">
-        <div className="md:text-4xl text-red-900 sm:text-3xl text-xl uppercase leading-8">
-          <h2 className="leading-relaxed">Change your patterns</h2>
+    <div className="flex relative items-center h-content py-6 sm:py-0 bg-gradient-to-r from-black from-50% via-black via-50% to-[#CCB9B9]">
+      <div className={`w-screen px-10 items-center ${frs.className}`}>
+        <div className="md:text-6xl text-white sm:text-3xl text-xl uppercase leading-8">
+          <h2 className={`leading-relaxed`}>Change your patterns</h2>
           <p>Redefine your relationships</p>
           <p className="mt-3 max-w-xl text-xl text-black font-sans font-extralight tracking-wide normal-case">
             Empowering men to create a life of abundance and stronger families{" "}

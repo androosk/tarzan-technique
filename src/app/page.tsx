@@ -1,4 +1,5 @@
 import AboutMe from "./components/AboutMe";
+import Clients from "./components/Clients";
 import CtaBar from "./components/CtaBar";
 import CtaBar2 from "./components/CtaBar2";
 import Footer from "./components/Footer";
@@ -14,7 +15,8 @@ export default function Home() {
       <InfoBox />
       <CtaBar />
       <Videos />
-      <Testimonials />
+      {/* <Testimonials /> */}
+      <Clients />
       <CtaBar2 />
       <AboutMe />
       <Footer />
