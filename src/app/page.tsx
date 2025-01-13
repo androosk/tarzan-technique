@@ -12,13 +12,13 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col">
       <Hero />
+      <Videos />
       <InfoBox />
       <CtaBar />
-      <Videos />
       {/* <Testimonials /> */}
-      <Clients />
-      <CtaBar2 />
+      {/* <Clients /> */}
       <AboutMe />
+      <CtaBar2 />
       <Footer />
     </main>
   );

@@ -6,8 +6,8 @@ export default function CtaBar() {
       href="https://calendly.com/tarzantechnique/new-client-intake-5-dollars-60-mins-brt-goals"
       target="_blank"
     >
-      <div className="bg-red-900 h-content py-4 flex flex-col justify-center items-center text-white font-sans font-extralight tracking-wide text-3xl">
-        <p>
+      <div className="bg-red-900 h-content py-4 px-6 flex flex-col justify-center items-center text-white font-sans font-extralight tracking-wide text-2xl md:text-3xl">
+        <p className="text-left md:text-center pb-4">
           Unleash fun, freedom and find fulfillment with the proven &quot;Tarzan
           Technique&quot;
         </p>
