@@ -120,6 +120,14 @@ export default function Videos() {
     >
       <div className="md:my-4 w-full max-w-4xl px-4">
         <div className="rounded-lg overflow-hidden shadow-lg">
+          <a
+            href="https://calendly.com/tarzantechnique/new-client-intake-5-dollars-60-mins-brt-goals"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="md:hidden block top-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg font-semibold text-sm transition-colors duration-200 shadow-lg hover:shadow-xl z-10 text-center mb-4"
+          >
+            Book a Session
+          </a>
           <div className="relative w-full" style={{ aspectRatio: "16/9" }}>
             <video
               key={featuredVideo.src}
