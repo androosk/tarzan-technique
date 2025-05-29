@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import InfoBox from "./components/InfoBox";
 import Testimonials from "./components/Testimonials";
-import Videos from "./components/Videos";
+import Videos from "./components/VideoGallery";
 
 export default function Home() {
   return (
