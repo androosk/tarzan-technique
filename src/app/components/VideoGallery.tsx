@@ -111,6 +111,12 @@ function VideoThumbnails({
 
 // Mobile Video Feed Component
 function MobileVideoFeed({ videos }: { videos: Video[] }) {
+  const [playingVideos, setPlayingVideos] = useState<Set<number>>(new Set());
+
+  const handleVideoPlay = (videoId: number) => {
+    setPlayingVideos(prev => new Set(prev).add(videoId));
+  };
+
   return (
     <div className="md:hidden w-full space-y-8">
       {videos.map((video, index) => (
@@ -132,11 +138,39 @@ function MobileVideoFeed({ videos }: { videos: Video[] }) {
               <video
                 controls
                 src={video.src}
+                poster={video.thumbnail}
                 className="absolute inset-0 w-full h-full object-cover"
                 preload="metadata"
+                onPlay={() => handleVideoPlay(video.id)}
               >
                 Sorry—your browser doesn&apos;t support embedded videos.
               </video>
+
+              {/* Custom play overlay - only show if video hasn't been played */}
+              {!playingVideos.has(video.id) && (
+                <div
+                  className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-20 cursor-pointer"
+                  onClick={() => {
+                    const videoElement = document.querySelector(
+                      `video[src="${video.src}"]`
+                    ) as HTMLVideoElement;
+                    if (videoElement) {
+                      videoElement.play();
+                      handleVideoPlay(video.id);
+                    }
+                  }}
+                >
+                  <div className="w-20 h-20 bg-white bg-opacity-95 rounded-full flex items-center justify-center shadow-lg">
+                    <svg
+                      className="w-8 h-8 text-gray-800 ml-1"
+                      fill="currentColor"
+                      viewBox="0 0 20 20"
+                    >
+                      <path d="M8 5v10l8-5-8-5z" />
+                    </svg>
+                  </div>
+                </div>
+              )}
             </div>
           </div>
           <h3 className="text-lg font-semibold mt-4 text-center">
