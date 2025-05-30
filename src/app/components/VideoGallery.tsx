@@ -64,7 +64,7 @@ function VideoThumbnails({
           }`}
           onClick={() => onVideoSelect(video)}
         >
-          <div className="relative w-full h-28 md:w-48 md:h-28 bg-gray-200 rounded-lg overflow-hidden">
+          <div className="relative w-full md:w-48 bg-gray-200 rounded-lg overflow-hidden">
             {/* Thumbnail image */}
             <img
               src={video.thumbnail}
